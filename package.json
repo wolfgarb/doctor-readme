@@ -1,8 +1,8 @@
 {
   "name": "readme-generator",
   "version": "1.0.0",
-  "description": "generate markdown file for your project",
-  "main": "index.js",
+  "description": "generate a markdown file for your project",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
