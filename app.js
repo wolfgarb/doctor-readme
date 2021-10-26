@@ -4,13 +4,13 @@ const genMarkdown = require("./src/page-template.js");
 
 // const writeFile = require("./utils/gen-md.js");
 
-function questions(data) {
+async function questions() {
   console.log(`
     ================
     README Generator
     ================
-    `);
-  return inquirer.prompt([
+    `)
+  const userInput = await inquirer.prompt([
     {
       type: "input",
       name: "title",
@@ -79,15 +79,11 @@ function questions(data) {
       default: false,
     },
   ])
-  .then((data) => {
-    console.log(data);
+  .then((userInput) => {
+    console.log(userInput)
+    return genMarkdown(userInput);
   })
-    
 };
-
-// genMarkdown(userInput);
-// if (userInput.confirmContributing) { ... }
-// else { return userInput }
 
 // TODO: Create a function to write README file
 // function writeFile(fileName, data) {
@@ -97,4 +93,5 @@ function questions(data) {
 
 
 questions();
+
 

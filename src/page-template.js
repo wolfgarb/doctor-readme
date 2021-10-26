@@ -1,16 +1,17 @@
 // TODO: Create a function to generate markdown for README
-const genMarkdown = userInput => {
-    return `
-    # ${userInput.title}
+const genMarkdown = data => {
+    console.log(
+        `
+    # ${data.title}
   
     ## Description
-    ${userInput.description}
+    ${data.description}
   
     ## Table of Contents
   
     ## Installation
-    ${userInput.installation}
-
+    ${data.installation}
+  
     ## Usage
   
     ## License
@@ -21,8 +22,8 @@ const genMarkdown = userInput => {
   
     ## Questions
     Feedback and questions are always welcome!
-  
-  `;
+  `
+    );
   }
 
 module.exports = genMarkdown;
