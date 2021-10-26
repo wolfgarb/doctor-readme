@@ -63,8 +63,8 @@ async function questions() {
     {
       type: "checkbox",
       name: "license",
-      message: "Choose a license for your project, or select 'None'. ",
-      choices: ["MIT", "Apache", "GPL", "None"],
+      message: "Choose a license for your project: ",
+      choices: ["MIT", "Apache-2.0", "ISC", "Unlicense"],
     },
     {
       type: 'confirm',
@@ -78,6 +78,11 @@ async function questions() {
       message: 'Would you like to include testing for this project?',
       default: false,
     },
+    {
+      type: 'input',
+      name: 'email',
+      message: 'Enter your email if you would like to be contacted',
+    }
   ])
   .then((userInput) => {
     console.log(userInput)
