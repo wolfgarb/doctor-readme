@@ -1,7 +1,9 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
-const genMarkdown = require("./src/page-template.js");
-
+const fs = require('fs');
+const genMarkdown = require('./utils/page-template.js')
+// import genMarkdown from "./src/page-template.js";
+// import writeFile from './utils/gen-md.js'
 // const writeFile = require("./utils/gen-md.js");
 
 async function questions() {
@@ -10,7 +12,7 @@ async function questions() {
     README Generator
     ================
     `)
-  const userInput = await inquirer.prompt([
+  inquirer.prompt([
     {
       type: "input",
       name: "title",
@@ -86,16 +88,23 @@ async function questions() {
   ])
   .then((userInput) => {
     console.log(userInput)
-    return genMarkdown(userInput);
+    return writeToFile('./dist/README.md', genMarkdown(userInput));
+    // return genMarkdown(userInput);
   })
+  
 };
 
 // TODO: Create a function to write README file
-// function writeFile(fileName, data) {
-
-// }
-
-
+function writeToFile(fileName, data) {
+  fs.writeFile(fileName, data, (err) => {
+    if (err) {
+     throw err;
+    } else {
+      console.log('File written');
+    }
+  })
+};
+  
 
 questions();
 
