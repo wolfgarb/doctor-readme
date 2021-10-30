@@ -1,3 +1,4 @@
+
 // TODO: Create a function to generate markdown for README
 function genMarkdown(data) {
     return `
@@ -23,11 +24,14 @@ function genMarkdown(data) {
     ${data.installation}
   
     ## Usage
-    
+    ${data.usage}
+
     ## Contributing
-  
+    ${data.contributing}
+
     ## Tests
-  
+    ${data.tests}
+
     ----
 
     ## Questions

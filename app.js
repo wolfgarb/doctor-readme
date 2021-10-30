@@ -69,16 +69,15 @@ async function questions() {
       choices: ["MIT", "Apache-2.0", "ISC", "Unlicense"],
     },
     {
-      type: 'confirm',
-      name: 'confirmContributing',
-      message: 'Would you like to add any contributors?',
-      default: false,
+      type: 'input',
+      name: 'contributing',
+      message: 'Please list any additional contributors, if none hit enter',
+      default: 'none',
     },
     {
-      type: 'confirm',
-      name: 'confirmTests',
-      message: 'Would you like to include testing for this project?',
-      default: false,
+      type: 'input',
+      name: 'tests',
+      message: 'Provide testing for this project, if none hit enter',
     },
     {
       type: 'input',
