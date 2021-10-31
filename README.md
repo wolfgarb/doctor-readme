@@ -10,11 +10,21 @@ This application
 
 ## Preview
 
+Here's a walkthrough of the questions from the CLI and where the file is generated:
+
+<img src='images\GenMD.gif' />
+
+The walkthrough video can be seen <a href='images\GenMD.mp4'>here</a>.
+
+Here is how the copied markdown will appear on your GitHub:
+
+<img src='images\mdpreview.gif' />
+
 ## Installation
 _This project requires Node.js_
 
 After you have installed Node, use the CLI to clone this repository.
-- git@github.com:wolfgarb/doctor-readme.md
+```git@github.com:wolfgarb/doctor-readme.md```
 
 Once cloned, you can use the command ```node app``` to initialize the application. 
 
@@ -23,8 +33,6 @@ Once cloned, you can use the command ```node app``` to initialize the applicatio
 Follow through the questions and a markdown file will be generated into the ```/dist``` directory under the filename ```README.md``` !
 
 <img src='images\readmecreate.png' />
-
-## Usage
 
 ## Feedback
 

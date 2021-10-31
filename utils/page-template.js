@@ -29,15 +29,17 @@ function genMarkdown(data) {
 ${data.description}
 
 ## License
-[<img src='https://img.shields.io/badge/License-${data.license}-blue.svg' />](https://opensource.org/licenses/${data.license})
+<a href='https://opensource.org/licenses/${data.license}'>
+<img src='https://img.shields.io/badge/License-${data.license}-blue.svg' />
+</a>
 
 ## Table of Contents
     
-[Installation](#installation)
-[Usage](#usage)
-[Contributing](#contributing)
-[Tests](#tests)
-[Questions](#questions)
+[Installation](#installation)<br>
+[Usage](#usage)<br>
+[Contributing](#contributing)<br>
+[Tests](#tests)<br>
+[Questions](#questions)<br>
 
 ----
 
