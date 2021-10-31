@@ -36,6 +36,7 @@ Follow through the questions and a markdown file will be generated into the ```/
 
 ## Feedback
 
-Have something you'd like to add? Feel free to contact me via email
-[Email Me] (mailto:sraewolfskill@gmail.com)
+Have something you'd like to add?<br> 
+Feel free to contact me via email!<br>
+[Email Me](mailto:sraewolfskill@gmail.com)
 
