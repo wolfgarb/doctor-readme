@@ -14,7 +14,7 @@ Here's a walkthrough of the questions from the CLI and where the file is generat
 
 <img src='images\GenMD.gif' />
 
-The walkthrough video can be seen <a href='images\GenMD.mp4'>here</a>.
+The walkthrough video can be seen <a href='https://youtu.be/cB2HhhBR0FM'>here</a>!
 
 Here is how the copied markdown will appear on your GitHub:
 
