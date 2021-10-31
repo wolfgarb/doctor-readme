@@ -4,8 +4,6 @@
 
 Creating a professional and informational markdown file is essential for programmers to have if they want to share their code with others. It's also a great way to give others a snapshot of what your code can do!
 
-This application 
-
 ----
 
 ## Preview
