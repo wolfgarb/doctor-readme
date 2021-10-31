@@ -66,13 +66,12 @@ async function questions() {
       type: "checkbox",
       name: "license",
       message: "Choose a license for your project: ",
-      choices: ["MIT", "Apache-2.0", "ISC", "Unlicense"],
+      choices: ["MIT", "Apache-2.0", "ISC", "None"],
     },
     {
       type: 'input',
       name: 'contributing',
       message: 'Please list any additional contributors, if none hit enter',
-      default: 'none',
     },
     {
       type: 'input',

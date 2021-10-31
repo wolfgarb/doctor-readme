@@ -1,3 +1,24 @@
+function renderContrib(data) {
+  if (data.contributing === '') {
+    return ``
+  } else {
+    return `
+    ## Contributing
+    ${data.contributing}
+    `
+  }
+}
+
+function renderTests(data) {
+  if (data.tests === '') {
+    return ``
+  } else {
+    return `
+    ## Tests
+    ${data.tests}
+    `
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 function genMarkdown(data) {
@@ -26,11 +47,9 @@ function genMarkdown(data) {
     ## Usage
     ${data.usage}
 
-    ## Contributing
-    ${data.contributing}
+    ${renderContrib(data)}
 
-    ## Tests
-    ${data.tests}
+    ${renderTests(data)}
 
     ----
 
