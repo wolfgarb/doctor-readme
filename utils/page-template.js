@@ -23,41 +23,43 @@ function renderTests(data) {
 // TODO: Create a function to generate markdown for README
 function genMarkdown(data) {
     return `
-    # ${data.title}
+# ${data.title}
   
-    ## Description
-    ${data.description}
+## Description
+${data.description}
 
-    ## License
-    [![License: ${data.license}](https://img.shields.io/badge/License-${data.license}-blue.svg)](https://opensource.org/licenses/${data.license})
+## License
+[<img src='https://img.shields.io/badge/License-${data.license}-blue.svg' />](https://opensource.org/licenses/${data.license})
 
-    ## Table of Contents
+## Table of Contents
     
-    [Installation] (#installation)
-    [Usage] (#usage)
-    [Contributing] (#contributing)
-    [Tests] (#tests)
-    [Questions] (#questions)
+[Installation](#installation)
+[Usage](#usage)
+[Contributing](#contributing)
+[Tests](#tests)
+[Questions](#questions)
 
-    ----
+----
 
-    ## Installation
-    ${data.installation}
+## Installation
+${data.installation}
   
-    ## Usage
-    ${data.usage}
+## Usage
+${data.usage}
 
-    ${renderContrib(data)}
+${renderContrib(data)}
 
-    ${renderTests(data)}
+${renderTests(data)}
 
-    ----
+----
 
-    ## Questions
-    Feedback and questions are always welcome!
-    [Github] (https://github.com/${data.github})
-    [Email] (mailto:${data.email})
-  `
+## Questions
+Feedback and questions are always welcome!
+
+[Github](https://github.com/${data.github})
+
+[Email](mailto:${data.email})
+`
   };
 
 module.exports = genMarkdown;
