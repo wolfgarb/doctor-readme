@@ -22,7 +22,7 @@ Here is how the copied markdown will appear on your GitHub:
 _This project requires Node.js_
 
 After you have installed Node, use the CLI to clone this repository.
-```git@github.com:wolfgarb/doctor-readme.md```
+```git@github.com:wolfskillobyte/doctor-readme.git```
 
 Once cloned, you can use the command ```node app``` to initialize the application. 
 
